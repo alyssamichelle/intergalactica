@@ -1,3 +1,72 @@
-<card-component [routerLink]="['employee-directory']">Employee Directory</card-component>
+<!-- <card-component >Employee Directory</card-component>
 <card-component [routerLink]="['locations']">Locations</card-component>
-<card-component [routerLink]="['products']">Products</card-component>
+<card-component [routerLink]="['products']">Products</card-component> -->
+
+<!-- <kendo-card [orientation]="'horizontal'"><a [routerLink]="['employee-directory']">
+  <img kendoCardMedia [src]="randomImage" />
+  <kendo-card-header>
+    <h1 kendoCardTitle>Employee Directory</h1>
+  </kendo-card-header>
+</a></kendo-card> -->
+
+<a [routerLink]="['employee-directory']">
+  <kendo-card [orientation]="'vertical'">
+    <img kendoCardMedia src="https://picsum.photos/id/209/300/200" />
+    <kendo-card-header>
+      <h1 kendoCardTitle>Employee Directory</h1>
+    </kendo-card-header>
+    <kendo-card-body>
+      <p>Our employee directory is very exstensive and will get you the info you need about all 87 of our current employees.
+      </p>
+    </kendo-card-body>
+  </kendo-card>
+</a>
+
+
+
+<a [routerLink]="['employee-directory']">
+  <kendo-card [orientation]="'vertical'">
+    <img kendoCardMedia src="https://picsum.photos/id/677/300/200" />
+    <kendo-card-header>
+      <h1 kendoCardTitle>Locations</h1>
+    </kendo-card-header>
+    <kendo-card-body>
+      <p>We 61 locations across the galaxy, each on their own planet. More information about each of our locations can be found in this directory.
+      </p>
+    </kendo-card-body>
+  </kendo-card>
+</a>
+
+<a [routerLink]="['employee-directory']">
+  <kendo-card>
+    <!-- <img kendoCardMedia src="https://picsum.photos/id/401/300/200" /> -->
+    <img kendoCardMedia src="https://picsum.photos/id/888/300/200" />
+    <kendo-card-header>
+      <h1 kendoCardTitle>Products</h1>
+    </kendo-card-header>
+
+    <kendo-card-body>
+      <p>We offer 37 of the finest starships you will ever find in this galaxy. Whether to the next inner-galactic
+        conference or to your child's galga-ball game, our starships will get you where you need to be, in light-time!
+      </p>
+    </kendo-card-body>
+    <!-- <kendo-card-actions>
+      <button class="k-button k-primary k-flat">Review</button>
+    </kendo-card-actions> -->
+  </kendo-card>
+</a>
+
+<!-- <div>
+  <img kendoCardMedia src="https://picsum.photos/300/200?random=2" />
+  <img kendoCardMedia src="https://picsum.photos/300/200?random=3" />
+  <img kendoCardMedia src="https://picsum.photos/300/200?random=4" />
+  <img kendoCardMedia src="https://picsum.photos/300/200?random=5" />
+  <img kendoCardMedia src="https://picsum.photos/300/200?random=6" />
+  <img kendoCardMedia src="https://picsum.photos/300/200?random=7" />
+  <img kendoCardMedia src="https://picsum.photos/300/200?random=8" />
+  <img kendoCardMedia src="https://picsum.photos/300/200?random=9" />
+</div> -->
+
+
+
+<!-- give cards a hover state -->

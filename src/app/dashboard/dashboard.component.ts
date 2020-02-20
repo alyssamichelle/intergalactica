@@ -1,4 +1,7 @@
+import { LoremPicsumService } from './../lorem-picsum.service';
 import { Component, OnInit } from '@angular/core';
+import { map } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
-  constructor() { }
+  randomImage;
+  constructor(private picsum:LoremPicsumService) { }
 
   ngOnInit(): void {
+    this.picsum.getRandomImage().pipe(
+      map((data)=> { 
+        console.log('data', data);
+        this.randomImage = data;
+      })
+    );
   }
 
 }
