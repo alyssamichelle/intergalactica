@@ -1,5 +1,18 @@
 # KuiEnterpriseDemo
 
+# InterGalactica
+An app for demo-ing enterprise KUI components in an Angular app.
+
+## TODO List
+
+- create components
+- set up routes
+- include grid
+- populate 3 pages with SWAPI
+- populate people and locations grid
+- virtualize one of them
+- chunk out and plan how to show different features of the grid 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
 
 ## Development server
