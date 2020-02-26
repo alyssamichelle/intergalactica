@@ -1,5 +1,3 @@
-# KuiEnterpriseDemo
-
 # InterGalactica
 An app for demo-ing enterprise KUI components in an Angular app.
 
@@ -7,8 +5,8 @@ An app for demo-ing enterprise KUI components in an Angular app.
 
 - create components
 - set up routes
-- include grid
 - populate 3 pages with SWAPI
+- include grid
 - populate people and locations grid
 - virtualize one of them
 - chunk out and plan how to show different features of the grid 
