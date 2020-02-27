@@ -1,0 +1,15 @@
+@import 'src/variables';
+
+header {
+  background-color: $professional-grey;
+  border-bottom: solid 1px #d7dadd;
+}
+
+h1 {
+  margin: 0;
+  padding: $page-padding;;
+}
+
+section {
+  margin: $page-padding;
+}

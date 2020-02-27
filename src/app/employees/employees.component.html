@@ -1,1 +1,24 @@
-<p>employees works!</p>
+<h2>Employee Directory</h2>
+
+<!--  let's check out our data -->
+<!-- <p>{{ employees.results | json }}</p> -->
+
+<!-- now let's loop through and look at the names -->
+<!-- <div *ngFor="let employee of employees.results">
+  <h3>{{employee.name}}</h3>
+</div> -->
+
+<!-- Next, GRID TIME! That's right, no looping, no parsing, you legit just pass it the names of the fields and BAM, this thing is actually miraculous. -->
+<kendo-grid [kendoGridGroupBinding]="employees.results" [navigable]="true" [groupable]="true" [sortable]="true" [filterable]="true" [pageSize]="10" scrollable="virtual" [rowHeight]="36" [height]="300">
+  <kendo-grid-column field="name" [width]="180" title="Name"></kendo-grid-column>
+  <kendo-grid-column field="height" title="Height" [width]="80"></kendo-grid-column>
+  <kendo-grid-column field="mass" title="Mass" [width]="130"></kendo-grid-column>
+  <kendo-grid-column field="hair_color" title="Hair Color" [width]="130"></kendo-grid-column>
+  <kendo-grid-column field="skin_color" title="Skin Color" [width]="130"></kendo-grid-column>
+  <kendo-grid-column field="eye_color" title="Eye Color" [width]="130"></kendo-grid-column>
+  <kendo-grid-column field="birth_year" title="Birth Year" [width]="130"></kendo-grid-column>
+  <kendo-grid-column field="gender" title="Gender" [width]="130"></kendo-grid-column>
+  <kendo-grid-column field="starships" title="Homeworld" [width]="130"></kendo-grid-column>
+  <kendo-grid-column field="url" title="Website" [width]="130"></kendo-grid-column>
+</kendo-grid>
+
